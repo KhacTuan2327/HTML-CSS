@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Lớp giả trong CSS</title>
+        <meta charset="utf-8">
+        <style>
+            .box{
+                width: 100%;
+                height: 200px;
+                background: #34495e;
+            }
+            .box:hover {
+                width: 100%;
+                height: 200px;
+                background: #27ae60
+            }
+            
+            #hover:hover{ 
+                color: #2980b9
+                
+            }
+            #active:active{
+                color: #2980b9;
+            }
+            ul{
+                font-size: 30px;
+                font-family: 'WindSong', cursive;
+            }
+            h1:hover{
+                font-family: 'WindSong', cursive;
+                color: #16a085
+            }
+            a:link{
+                font-family: 'Dancing Script', cursive;
+                font-size: 30px;
+                background-color:#8e44ad;
+            }
+            div:hover p{
+                display: block;
+                font-size: 30px;
+            }
+            p{
+                display: none;
+                background-color:#16a085;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style = "font-size: 30px">Đây là 1 tấm màu gì?</h2>
+        <div class="box">
+            <p>Đây là 1 tấm màu xanh</p>
+        </div>
+        <h1 style="font-size: 30px;">CSS Pseudo Classes</h1>
+        <ul>
+            <li>:root</li>
+            <li id="hover">:hover</li> <!--thay đổi khi di chuột vào-->
+            <li id="active">:active</li> <!--Thay đổi khi nhấn hoặc giữ chuột vào-->
+            <li id="first_child">:first_child</li><!--Thay đổi thuộc tính của phần tử thứ nhất-->
+            <li id="last_child">:last_child</li><!--Thay đổi thuộc tính của phần tử cuối cùng-->
+        </ul> 
+        <a  href="https://www.w3schools.com/cssref/sel_link.asp">:link</a> <!--Chọn và tạo kiểu liên kết cho đường link--><br><br>
+        <div class="test" style="font-size: 30px;"> Nhấn vào đây sẽ có điều bất ngờ <!--Chú thích cho thẻ div khi di chuột vào-->
+            <p>Hello mọi người, mình là Tuấn đây</p>
+        </div>
+    </body>
+</html>

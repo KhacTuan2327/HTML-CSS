@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Position</title>
+        <meta charset="UTF-8" />
+        <style>
+            .box{
+                background-color: #B33771;
+                position: relative;
+                height: 100px;
+                width: 100%;
+                top: 0;
+                position:fixed;
+                left: 0;
+                font-size: 40px;
+            }
+            .box-child{
+                background-color: #fff;
+                height: 50px;
+                width: 100px;
+                position: absolute;
+                margin-left: 50%;
+                
+            }
+            h1{
+                margin-top: 150px;
+                border: 1px solid #333;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+            }
+            ul{
+                height: 2000px
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "box">POSITION
+            <div class = "box-child"></div>
+        </div>
+        <h1 style="font-size: 50px ">Position</h1>
+        <ul>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </body>
+</html>

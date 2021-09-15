@@ -1,0 +1,12 @@
+.Note{
+    font-size: 15px;
+    color: #0d5257;
+}
+.lienquan{
+    font-size: 25px;
+    color: brown; 
+    font-family: 'Anton', sans-serif;
+}
+textarea{
+    display: block;
+}

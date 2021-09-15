@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    1, h: thẻ tiêu đề
+    2, img: thẻ ảnh
+    3, p: thẻ đoạn văn
+    4, a: thẻ chứa link liên kết (link bạn muốn người dùng nhấn vào)
+    5, ul;li: thẻ chứa danh sách
+    6, table: thẻ chứa bảng
+    7, input: thẻ để chọn nhập thông tin vào 
+    8, button: thẻ chứa nút (VD: nút đăng ký của Facebook)
+    9, div: Tạo 1 cái bao chứa phần thân
+-->
+    <html>
+        <head>
+            <title>Thông tin cá nhân</title>
+            <meta charset="utf-8" />
+            <!--internal-->
+            <style>
+                h2 {
+                color: rgb(14, 158, 86);
+                font-size: 20px;
+            }
+            </style>
+            
+        </head>
+
+        <body>
+            <div>
+                <img src="https://scontent-hkt1-1.xx.fbcdn.net/v/t1.6435-9/186324558_1821033558068696_4702229595206867054_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=k1JKbbPd8HMAX_cKNS3&_nc_ht=scontent-hkt1-1.xx&oh=26e8af935ef47242a6c8ca00acaa0d10&oe=6122CB8A" width="250" alt="Khắc Tuấn" />
+                <h1 style="color: rgb(199, 144, 24); font-size: 30px">Giới thiệu bản thân</h1> <!-- thẻ chứa tiêu đề, inline -->
+                <!--
+                    Có 3 cách sử dụng css với html
+                    1, internal
+                    2,external
+                    3, inline
+                --> 
+                <p>Sản phẩm đầu tay trong quá trình học HTML viết về thông tin cá nhân của mình</p> <!-- thẻ để chứa đoạn văn-->
+                <h2>Họ và Tên: Trịnh Khắc Tuấn</h2>
+                <h2>Ngày sinh: 23/07/2001</h2>
+                <h2>Giới tính: Nam</h2>
+                <h2>Quê quán: Thanh Hóa</h2>
+                <h2>Sống tại: Hà Nội</h2>
+                <h2>Email: khactuan2327@gmail.com</h2>
+                <h2>Facebook</h2>
+                <a href="https://www.facebook.com/khactuan2327/" >Khắc Tuấn</a>
+                <h2>Sở thích</h2>
+                <ul>
+                    <li>Chơi game</li>
+                    <li>Nghe nhạc</li>
+                    <li>Xem phim</li>
+                    <li>Ở bên cạnh gia đình</li>
+                </ul>
+                <h2>Trường đã và đang theo học</h2>
+                <table>
+                    <thead>
+                        <th>STT</th> <!--dòng đầu tiên chứa các tiêu mục thống kê của bảng-->
+                        <th>Tên trường</th>
+                        <th>Cấp</th>
+                    </thead>
+                    <tbody>
+                        <tr> <!--Dòng của bảng-->
+                            <td>1</td> <!--Cột của bảng-->
+                            <td>Tiểu học Xuân Lai</td>
+                            <td>Cấp 1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Trung học cơ sở Xuân Lai</td>
+                            <td>Cấp 2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Trung học phổ thông Lê Hoàn</td>
+                            <td>Cấp 3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Học viện Kỹ thuật Quân sự</td>
+                            <td>Đại học</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Đăng nhập Facebook</h3>
+                <link rel="stylesheet" href="info.css"/><!--external -->
+                Tên tài khoản: <input type="text"/>
+                Mật khẩu: <input type="password"/>
+                <button>Đăng nhập</button>
+                <h3>Nhớ mật khẩu </h3>
+                Có <input name = "check" type = "radio"> 
+                Không <input name = "check" type = "radio"> 
+
+            </div>
+        </body>
+    </html>

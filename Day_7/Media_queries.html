@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media queries</title>
+        <meta charset="utf-8"/>
+        <style>
+            body { 
+                display: flex;
+                font-size: 30px;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            .pc, 
+            .Tablet, 
+            .Mobile{
+                display: none;
+            }
+            /* Mobile */
+            @media (max-width: 740px) {
+                .Mobile{
+                    display: block;
+                }
+            }
+            /* Tablet */
+            @media (min-width: 741px) and (max-width: 1023px) {
+                .Tablet{
+                    display: block;
+                }
+            }
+            /* PC */
+            @media (min-width: 1024px) {
+                .pc{
+                    display: block;
+                }
+            }
+            /* 
+            PC: >=1024px
+            Tablet >=740px && <= 1024px
+            mobile: <=740 px
+             */
+        </style>
+    </head>
+    <body>
+        <h1>Media queries</h1>
+        <h2 class="pc">PC</h2>
+        <h2 class="Tablet">Tablet</h2>
+        <h2 class="Mobile">Mobile</h2>
+    </body>
+</html>

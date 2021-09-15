@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phần tử giả trong HTML-CSS</title>
+        <meta charset="utf-8">
+        <style>
+            .box{
+                width: 100%;
+                height: 200px;
+                background-color: #6D214F
+            }
+            .box::after{
+                content: "Đây là content";
+                display: block;
+                width: 10%;
+                height: 40px;
+                background-color:  #FD7272;
+            }
+            .box::before{
+                content: "Lại là content";
+                display: block;
+                width: 10%;
+                height: 40px;
+                background-color: #55E6C1
+            }
+            h1::first-line{
+                font-size: 30px;
+                font-family: Arial;
+                color: #82589F
+            }
+            h1::first-letter{
+                font-size:  60px;
+                font-family: 'MonteCarlo', cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <h1>CSS pseudo- elements</h1>
+        <ul style=" font-size: 30px">
+            <li>::before</li>
+            <li>::after</li>
+            <li>::first_letter</li>
+            <li>::first_line</li>
+            <li>::selection</li>
+        </ul>
+    </body>
+</html>
