@@ -1,0 +1,18 @@
+:root{
+    --font-size:50px;
+    --text-color:rgb(59, 116, 208);
+}
+html{
+    font-size: 10px
+}
+/* Biến được khai báo trong root là biến toàn cục, được sử dụng trên toàn bộ chương trình */
+/* được đặt tên sau -- */
+h1{
+    font-size: var(--font-size);
+    color: var(--text-color);
+}
+/* Đơn vị rem là đơn vị biến đổi theo kích thước của thẻ html */
+/* mặc định kích thước chữ của thẻ html là 16px = 1 rem */
+h2{
+    font-size: 2.5rem;
+}

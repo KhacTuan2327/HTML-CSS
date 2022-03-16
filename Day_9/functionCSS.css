@@ -1,0 +1,20 @@
+:root {
+    --box-color: rgb(109, 159, 189);
+    --box-width: 10rem;
+    --box-height: calc(100px + 1rem);
+    /* calc() là function dùng để tính toán, có thể dùng đồng thời cả giá
+    trị tương đối và tuyệt đối */
+}
+.testBox{
+    width: var(--box-width);
+    /* var() */
+    height: var(--box-height);
+    background: var(--box-color);
+}
+.testBox::after{
+    content: attr(data-box);
+    /* attr(): lấy thuộc tính từ các thẻ khác hoặc chính thẻ đó */
+}
+.linkFace::after{
+    content: "("attr(href)")";
+}
